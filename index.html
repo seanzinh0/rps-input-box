@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="game.css"/>
+    <script src="game.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+<div class="modal-flex hidden">
+    <div id="modal">
+        <div class="username-input">
+            <h2>Enter a Username</h2>
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Username"/>
+            <div class="button-wrapper__modal">
+                <button id="submit-user">Submit User Name</button>
+                <button id="cont-guest">Continue as Guest</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="add-blur">
+
+    <div class="main-content">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="winner-wrapper">
+            <div class="winner-message">
+                <h1>Who Won?</h1>
+                <p id="winner"></p>
+            </div>
+        </div>
+
+        <div class="flex-wrapper">
+            <div class="player-wrapper">
+                <div id="bot">
+                    <h2>Mr. Robot</h2>
+                    <p id="robot-choice">Mr. Robot chose:</p>
+                </div>
+                <div class="user">
+                    <h2 id="guest">Guest</h2>
+                    <form id="choice-submit">
+                        <input type="text" id="choices" placeholder="Enter Rock, Paper, or Scissors">
+                        <input type="submit" id="submit-choice">
+                    </form>
+                    <p id="user-choice">You chose:</p>
+                </div>
+            </div>
+            <div class="score-counter">
+                <div class="score-wrapper">
+                    <h2>Mr. Robot's Score:</h2>
+                    <p id="robot-score">0</p>
+                </div>
+                <div class="score-wrapper">
+                    <h2>Your Score:</h2>
+                    <p id="user-score">0</p>
+                </div>
+                <div class="score-wrapper">
+                    <h2>Ties:</h2>
+                    <p id="tie-count">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="reset-wrapper">
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
