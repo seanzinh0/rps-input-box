@@ -56,6 +56,11 @@ function incrementTie() {
     tieCount.innerHTML = tie;
 }
 
+/**
+ * Event listener added onto submit button
+ * When clicked calls a function that compares user input to robot choice and gets a result and increments scores or ties
+ * prevents default so that the page doesn't reload on submit
+ */
 submitChoice.addEventListener("click", function (event) {
     event.preventDefault();
     let choicesVal = choices.value.trim().toLowerCase();
